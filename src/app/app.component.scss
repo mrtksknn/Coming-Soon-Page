@@ -1,0 +1,79 @@
+.page-container {
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+
+  .left-container {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    padding: 100px 325px 120px 250px;
+    background-repeat: no-repeat;
+    justify-content: space-between;
+    background-image: url(../assets/bg-pattern-desktop.svg);
+
+    img {
+      max-width: 230px;
+    }
+
+    .texts {
+      .title {
+        display: flex;
+        font-size: 100px;
+        letter-spacing: 22px;
+        flex-direction: column;
+      }
+      p {
+        line-height: 35px;
+        letter-spacing: 0.16rem;
+      }
+    }
+
+    .mail-form {
+      margin-top: -120px;
+
+      .example-form {
+        position: relative;
+
+        input {
+          width: 100%;
+          outline: none;
+          font-size: 20px;
+          padding: 25px 40px;
+          border-radius: 50px;
+          border: 1px solid #d9cacd;
+        }
+
+        input::placeholder {
+          color: #e1cfcf;
+        }
+
+        .submit {
+          top: 0;
+          right: 0;
+          width: 120px;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          position: absolute;
+          border-radius: 50px;
+          justify-content: center;
+          border: 1px solid #d9cacd;
+        }
+
+        .submit:hover {
+          cursor: pointer;
+          background: #f7cbca;
+        }
+      }
+    }
+  }
+
+  .right-container {
+    width: 40%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../assets/hero-desktop.jpg);
+  }
+}
