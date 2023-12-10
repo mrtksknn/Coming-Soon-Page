@@ -1,79 +1,313 @@
 .page-container {
+  width: 100%;
   height: 100vh;
   display: flex;
   overflow: hidden;
 
   .left-container {
-    width: 60%;
+    width: 57%;
     display: flex;
     flex-direction: column;
     background-size: cover;
-    padding: 100px 325px 120px 250px;
     background-repeat: no-repeat;
-    justify-content: space-between;
     background-image: url(../assets/bg-pattern-desktop.svg);
 
-    img {
-      max-width: 230px;
+    .logo {
+      padding: 65px 200px 50px 250px;
+
+      img {
+        max-width: 160px;
+      }
     }
 
-    .texts {
+    .mobile-hero {
+      height: 512px;
+      display: none;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url(../assets/hero-mobile.jpg);
+    }
+
+    .content {
+      font-size: 24px;
+      padding: 0 200px 100px 250px;
+
       .title {
         display: flex;
-        font-size: 100px;
-        letter-spacing: 22px;
+        font-size: 80px;
+        margin-top: 100px;
+        line-height: 70px;
+        letter-spacing: 20px;
         flex-direction: column;
       }
+
       p {
-        line-height: 35px;
-        letter-spacing: 0.16rem;
+        margin-top: 20px;
+        line-height: 30px;
       }
-    }
 
-    .mail-form {
-      margin-top: -120px;
-
-      .example-form {
-        position: relative;
-
-        input {
-          width: 100%;
-          outline: none;
-          font-size: 20px;
-          padding: 25px 40px;
-          border-radius: 50px;
-          border: 1px solid #d9cacd;
-        }
-
-        input::placeholder {
-          color: #e1cfcf;
-        }
-
-        .submit {
-          top: 0;
-          right: 0;
-          width: 120px;
-          height: 100%;
-          display: flex;
-          align-items: center;
-          position: absolute;
-          border-radius: 50px;
-          justify-content: center;
-          border: 1px solid #d9cacd;
-        }
-
-        .submit:hover {
-          cursor: pointer;
-          background: #f7cbca;
+      .mail-form {
+        margin-top: 35px;
+  
+        .example-form {
+          position: relative;
+  
+          input {
+            width: 100%;
+            outline: none;
+            font-size: 16px;
+            padding: 19px 30px;
+            border-radius: 50px;
+            border: 1px solid #d9cacd;
+          }
+  
+          input::placeholder {
+            color: #e1cfcf;
+          }
+  
+          .submit {
+            top: 0;
+            right: 0;
+            width: 100px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            position: absolute;
+            border-radius: 50px;
+            justify-content: center;
+            border: 1px solid #d9cacd;
+          }
+  
+          .submit:hover {
+            cursor: pointer;
+            background: #f7cbca;
+          }
         }
       }
     }
   }
 
   .right-container {
-    width: 40%;
+    width: 43%;
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(../assets/hero-desktop.jpg);
+  }
+}
+
+// MEDIA QUERIES FOR ALL DEVICES SCREEN SIZE
+@media screen and (max-width: 425px) {
+  .page-container {
+    flex-direction: column;
+  
+    .left-container {
+      width: 100%;
+      background: none;
+  
+      .logo {
+        padding: 24px;
+        img {
+          max-width: 120px;
+        }
+      }
+
+      .mobile-hero {
+        height: 283px;
+        display: block;
+      }
+  
+      .content {
+        padding: 24px;
+        font-size: 18px;
+        margin-top: 26px;
+        text-align: center;
+  
+        .title {
+          margin: 0;
+          display: flex;
+          font-size: 40px;
+          line-height: 40px;
+          letter-spacing: 20px;
+          flex-direction: column;
+        }
+      }
+    }
+  
+    .right-container {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .page-container {
+    overflow: auto;
+    flex-direction: column;
+  
+    .left-container {
+      width: 100%;
+      background: none;
+  
+      .logo {
+        padding: 40px;
+        img {
+          max-width: 140px;
+        }
+      }
+
+      .mobile-hero {
+        display: flex;
+        height: 368px;
+        background-size: cover;
+      }
+  
+      .content {
+        padding: 48px;
+        font-size: 22px;
+        margin-top: 26px;
+        text-align: center;
+  
+        .title {
+          margin: 0;
+          font-size: 50px;
+        }
+      }
+    }
+  
+    .right-container {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .page-container {
+    .left-container {
+      width: 50%;
+      .logo {
+        padding: 65px 40px;
+  
+        img {
+          max-width: 160px;
+        }
+      }
+  
+      .content {
+        font-size: 18px;
+        padding: 0 40px;
+  
+        .title {
+          font-size: 50px;
+          margin-top: 50px;
+        }
+      }
+    }
+  
+    .right-container {
+      width: 50%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-image: url(../assets/hero-desktop.jpg);
+    }
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  .page-container {
+    .left-container {
+      width: 50%;
+      .logo {
+        padding: 65px 60px;
+  
+        img {
+          max-width: 160px;
+        }
+      }
+  
+      .content {
+        font-size: 24px;
+        padding: 0 60px;
+  
+        .title {
+          font-size: 70px;
+          margin-top: 50px;
+        }
+
+        .mail-form {    
+          .example-form {    
+            .submit {
+              right: 0;
+            }
+          }
+        }
+      }
+    }
+  
+    .right-container {
+      width: 50%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-image: url(../assets/hero-desktop.jpg);
+    }
+  }
+}
+
+@media screen and (min-width: 1441px) {
+  .page-container {
+    .left-container {
+      width: 45%;
+      .logo {
+        padding: 65px 150px 50px 120px;
+  
+        img {
+          max-width: 160px;
+        }
+      }
+  
+      .content {
+        max-width: 1000px;
+        font-size: 24px;
+        padding: 0 150px 100px 120px;
+  
+        .title {
+          font-size: 80px;
+          margin-top: 100px;
+          line-height: 70px;
+        }
+        .mail-form {
+          .example-form {    
+            input {
+              width: 100%;
+            }
+    
+            input::placeholder {
+              color: #e1cfcf;
+            }
+    
+            .submit {
+              top: 0;
+              right: 0;
+              width: 100px;
+              height: 100%;
+              display: flex;
+              align-items: center;
+              position: absolute;
+              border-radius: 50px;
+              justify-content: center;
+              border: 1px solid #d9cacd;
+            }
+    
+            .submit:hover {
+              cursor: pointer;
+              background: #f7cbca;
+            }
+          }
+        }
+      }
+    }
+  
+    .right-container {
+      width: 55%;
+    }
   }
 }
