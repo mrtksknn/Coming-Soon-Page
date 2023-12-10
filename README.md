@@ -1,27 +1,46 @@
-# ComingSoonPage
+Base Apparel Coming Soon Page
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.5.
+Welcome! 👋
 
-## Development server
+- Overview
+  - The Challenge
+  - Screenshot
+  - Links
+- Built With
+- Author
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Overview
 
-## Code scaffolding
+### The Challenge
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Users should be able to:
 
-## Build
+- View the optimal layout for the site depending on their device's screen size
+- See hover states for all interactive elements on the page
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Screenshot
 
-## Running unit tests
+![desktop-design](https://github.com/mrtksknn/Coming-Soon-Page/assets/36448206/738975f3-ef41-4d2e-9c33-f62258d3b355)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+![mobile-design](https://github.com/mrtksknn/Coming-Soon-Page/assets/36448206/d341894e-c4ec-4dbb-b469-8f397986d763)
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Links
 
-## Further help
+- Portfolio URL: (Coming Soon)
+- Live Site URL: (Coming Soon)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Built with
+
+- Flexbox
+- CSS Grid
+- Semantic HTML5 markup
+- CSS custom properties
+- Mobile-first workflow
+- Pure SCSS - For styles
+- [Angular](https://angular.io/) - JS library
+
+## Author
+- Website - [Mert Keskin](coming-soon)
+
+
