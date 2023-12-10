@@ -26,8 +26,6 @@ Users should be able to:
 
 
 ### Links
-
-- Portfolio URL: (Coming Soon)
 - Live Site URL: (Coming Soon)
 
 ## Built with
