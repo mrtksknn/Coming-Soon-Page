@@ -17,6 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
+            "serviceWorker": "src/service-worker.js",
             "outputPath": "dist/coming-soon-page",
             "index": "src/index.html",
             "browser": "src/main.ts",
@@ -29,7 +30,6 @@
               "src/favicon.ico",
               "src/assets"
             ],
-            "serviceWorker": "true",
             "styles": [
               "@angular/material/prebuilt-themes/deeppurple-amber.css",
               "src/styles.scss"
