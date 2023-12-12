@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "serviceWorker": "src/service-worker.js",
+            "serviceWorker": "true",
             "outputPath": "dist/coming-soon-page",
             "index": "src/index.html",
             "browser": "src/main.ts",
