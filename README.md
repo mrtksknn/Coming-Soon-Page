@@ -26,7 +26,7 @@ Users should be able to:
 
 
 ### Links
-- Live Site URL: (Coming Soon)
+- Live Site URL: [(Coming Soon)](https://base-apprel-coming-soon-page.netlify.app/)
 
 ## Built with
 
